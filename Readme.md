@@ -1,10 +1,9 @@
-#use bigdata virtualenv
-Install python
+# Install python
 Import all dependencies
 Setup PostgreSQL > Create a DB named: WeatherDB
 Install airflow
 
-# Start airflow
+Start airflow
 airflow webserver -p 8080
 
 airflow scheduler
