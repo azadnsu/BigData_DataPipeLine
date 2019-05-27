@@ -1,0 +1,32 @@
+[2019-05-26 18:35:31,963] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.transform_load 2019-05-26T00:00:00+00:00 [queued]>
+[2019-05-26 18:35:31,970] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.transform_load 2019-05-26T00:00:00+00:00 [queued]>
+[2019-05-26 18:35:31,970] {__init__.py:1353} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-26 18:35:31,971] {__init__.py:1354} INFO - Starting attempt 1 of 6
+[2019-05-26 18:35:31,971] {__init__.py:1355} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-26 18:35:31,983] {__init__.py:1374} INFO - Executing <Task(PythonOperator): transform_load> on 2019-05-26T00:00:00+00:00
+[2019-05-26 18:35:31,984] {base_task_runner.py:119} INFO - Running: [u'airflow', u'run', 'weatherDag', 'transform_load', '2019-05-26T00:00:00+00:00', u'--job_id', '5', u'--raw', u'-sd', u'DAGS_FOLDER/weatherDag.py', u'--cfg_path', '/var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T/tmpA9cgLo']
+[2019-05-26 18:35:32,688] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load [2019-05-26 18:35:32,688] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-05-26 18:35:32,859] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load [2019-05-26 18:35:32,858] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:35:32,862] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-26 18:35:32,862] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load   DeprecationWarning)
+[2019-05-26 18:35:32,869] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-05-26 18:35:32,869] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load   """)
+[2019-05-26 18:35:32,869] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-26 18:35:32,869] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load   DeprecationWarning)
+[2019-05-26 18:35:37,887] {base_task_runner.py:101} INFO - Job 5: Subtask transform_load [2019-05-26 18:35:37,886] {cli.py:517} INFO - Running <TaskInstance: weatherDag.transform_load 2019-05-26T00:00:00+00:00 [running]> on host Azads-MacBook-Pro.local
+[2019-05-26 18:35:42,905] {python_operator.py:104} INFO - Exporting the following env vars:
+AIRFLOW_CTX_TASK_ID=transform_load
+AIRFLOW_CTX_DAG_ID=weatherDag
+AIRFLOW_CTX_EXECUTION_DATE=2019-05-26T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill_2019-05-26T00:00:00+00:00
+[2019-05-26 18:35:42,909] {logging_mixin.py:95} INFO - [2019-05-26 18:35:42,909] {base_hook.py:83} INFO - Using connection to: id: weather_id. Host: localhost, Port: None, Schema: WeatherDB, Login: Azad, Password: None, extra: {}
+[2019-05-26 18:35:42,915] {logging_mixin.py:95} INFO - [2019-05-26 18:35:42,914] {dbapi_hook.py:168} INFO - INSERT INTO weather_table 
+					(city, country, latitude, longitude,
+					todays_date, humidity, pressure, 
+					min_temp, max_temp, temp, weather)
+					VALUES
+					(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s); with parameters ('Tallinn', 'EE', 59.44, 24.75, datetime.date(2019, 5, 26), 87.0, 996.0, 8.890000000000043, 10.0, 9.470000000000027, 'light intensity shower rain')
+[2019-05-26 18:35:42,922] {python_operator.py:113} INFO - Done. Returned value was: None
+[2019-05-26 18:35:47,065] {logging_mixin.py:95} INFO - [2019-05-26 18:35:47,064] {jobs.py:2562} INFO - Task exited with return code 0

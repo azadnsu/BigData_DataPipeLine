@@ -1,0 +1,27 @@
+[2019-05-27 17:11:33,032] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.get_weather 2019-05-26T00:40:00+00:00 [queued]>
+[2019-05-27 17:11:33,036] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.get_weather 2019-05-26T00:40:00+00:00 [queued]>
+[2019-05-27 17:11:33,036] {__init__.py:1353} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-27 17:11:33,036] {__init__.py:1354} INFO - Starting attempt 1 of 6
+[2019-05-27 17:11:33,036] {__init__.py:1355} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-27 17:11:33,043] {__init__.py:1374} INFO - Executing <Task(BashOperator): get_weather> on 2019-05-26T00:40:00+00:00
+[2019-05-27 17:11:33,043] {base_task_runner.py:119} INFO - Running: [u'airflow', u'run', 'weatherDag', 'get_weather', '2019-05-26T00:40:00+00:00', u'--job_id', '102', u'--raw', u'-sd', u'DAGS_FOLDER/weatherDag.py', u'--cfg_path', '/var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T/tmp8L92ke']
+[2019-05-27 17:11:33,679] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather [2019-05-27 17:11:33,678] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-05-27 17:11:33,826] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather [2019-05-27 17:11:33,825] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-27 17:11:33,829] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-27 17:11:33,830] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather   DeprecationWarning)
+[2019-05-27 17:11:33,839] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-27 17:11:33,840] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather   DeprecationWarning)
+[2019-05-27 17:11:33,851] {base_task_runner.py:101} INFO - Job 102: Subtask get_weather [2019-05-27 17:11:33,850] {cli.py:517} INFO - Running <TaskInstance: weatherDag.get_weather 2019-05-26T00:40:00+00:00 [running]> on host Azads-MacBook-Pro.local
+[2019-05-27 17:11:33,862] {bash_operator.py:81} INFO - Tmp dir root location: 
+ /var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T
+[2019-05-27 17:11:33,863] {bash_operator.py:90} INFO - Exporting the following env vars:
+AIRFLOW_CTX_TASK_ID=get_weather
+AIRFLOW_CTX_DAG_ID=weatherDag
+AIRFLOW_CTX_EXECUTION_DATE=2019-05-26T00:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill_2019-05-26T00:40:00+00:00
+[2019-05-27 17:11:33,864] {bash_operator.py:104} INFO - Temporary script location: /var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T/airflowtmpZ3MztX/get_weatherQQuEta
+[2019-05-27 17:11:33,864] {bash_operator.py:114} INFO - Running command: /Users/azad/.virtualenvs/bigdata/bin/python /Users/azad/airflow/dags/src/getWeather.py
+[2019-05-27 17:11:33,868] {bash_operator.py:123} INFO - Output:
+[2019-05-27 17:11:34,117] {bash_operator.py:131} INFO - Command exited with return code 0

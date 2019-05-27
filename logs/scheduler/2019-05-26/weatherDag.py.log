@@ -1,0 +1,59 @@
+[2019-05-26 18:37:55,686] {jobs.py:398} INFO - Started process (PID=82059) to work on /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:38:00,693] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/weatherDag.py for tasks to queue
+[2019-05-26 18:38:00,694] {logging_mixin.py:95} INFO - [2019-05-26 18:38:00,693] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:38:00,705] {logging_mixin.py:95} WARNING - /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:38:00,719] {logging_mixin.py:95} WARNING - /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+[2019-05-26 18:38:00,721] {logging_mixin.py:95} WARNING - /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:38:00,725] {jobs.py:1723} INFO - DAG(s) ['weatherDag'] retrieved from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:38:00,735] {logging_mixin.py:95} INFO - [2019-05-26 18:38:00,735] {__init__.py:4113} INFO - Creating ORM DAG for weatherDag
+[2019-05-26 18:38:00,754] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/weatherDag.py took 5.068 seconds
+[2019-05-26 18:40:05,067] {jobs.py:398} INFO - Started process (PID=82093) to work on /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:40:10,075] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/weatherDag.py for tasks to queue
+[2019-05-26 18:40:10,076] {logging_mixin.py:95} INFO - [2019-05-26 18:40:10,076] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:40:10,085] {logging_mixin.py:95} WARNING - /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:40:10,098] {logging_mixin.py:95} WARNING - /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+[2019-05-26 18:40:10,099] {logging_mixin.py:95} WARNING - /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:40:10,104] {jobs.py:1723} INFO - DAG(s) ['weatherDag'] retrieved from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:40:10,125] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/weatherDag.py took 5.058 seconds
+[2019-05-26 18:45:11,830] {jobs.py:398} INFO - Started process (PID=82276) to work on /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:45:16,839] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/weatherDag.py for tasks to queue
+[2019-05-26 18:45:16,841] {logging_mixin.py:95} INFO - [2019-05-26 18:45:16,840] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:45:16,859] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:45:16,905] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:45:16,911] {jobs.py:1723} INFO - DAG(s) ['weatherDag'] retrieved from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:45:16,936] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/weatherDag.py took 5.106 seconds
+[2019-05-26 18:47:21,419] {jobs.py:398} INFO - Started process (PID=82307) to work on /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:47:26,430] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/weatherDag.py for tasks to queue
+[2019-05-26 18:47:26,431] {logging_mixin.py:95} INFO - [2019-05-26 18:47:26,431] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:47:26,440] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:47:26,460] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:47:26,468] {jobs.py:1723} INFO - DAG(s) ['weatherDag'] retrieved from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:47:26,493] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/weatherDag.py took 5.074 seconds
+[2019-05-26 18:49:30,874] {jobs.py:398} INFO - Started process (PID=82335) to work on /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:49:35,881] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/weatherDag.py for tasks to queue
+[2019-05-26 18:49:35,894] {logging_mixin.py:95} INFO - [2019-05-26 18:49:35,894] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:49:35,909] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:49:35,939] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:49:35,945] {jobs.py:1723} INFO - DAG(s) ['weatherDag'] retrieved from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:49:35,970] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/weatherDag.py took 5.096 seconds
+[2019-05-26 18:51:40,196] {jobs.py:398} INFO - Started process (PID=82367) to work on /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:51:45,204] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/weatherDag.py for tasks to queue
+[2019-05-26 18:51:45,205] {logging_mixin.py:95} INFO - [2019-05-26 18:51:45,204] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:51:45,215] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:51:45,236] {logging_mixin.py:95} WARNING - /usr/local/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+  DeprecationWarning)
+[2019-05-26 18:51:45,240] {jobs.py:1723} INFO - DAG(s) ['weatherDag'] retrieved from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:51:45,264] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/weatherDag.py took 5.068 seconds

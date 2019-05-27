@@ -1,0 +1,31 @@
+[2019-05-26 18:38:14,198] {jobs.py:398} INFO - Started process (PID=82063) to work on /Users/azad/airflow/dags/example.py
+[2019-05-26 18:38:19,205] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/example.py for tasks to queue
+[2019-05-26 18:38:19,207] {logging_mixin.py:95} INFO - [2019-05-26 18:38:19,206] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:38:19,217] {jobs.py:1723} INFO - DAG(s) ['FirstDag'] retrieved from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:38:19,229] {logging_mixin.py:95} INFO - [2019-05-26 18:38:19,229] {__init__.py:4113} INFO - Creating ORM DAG for FirstDag
+[2019-05-26 18:38:19,247] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/example.py took 5.049 seconds
+[2019-05-26 18:40:23,458] {jobs.py:398} INFO - Started process (PID=82096) to work on /Users/azad/airflow/dags/example.py
+[2019-05-26 18:40:28,466] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/example.py for tasks to queue
+[2019-05-26 18:40:28,467] {logging_mixin.py:95} INFO - [2019-05-26 18:40:28,467] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:40:28,477] {jobs.py:1723} INFO - DAG(s) ['FirstDag'] retrieved from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:40:28,503] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/example.py took 5.045 seconds
+[2019-05-26 18:45:24,163] {jobs.py:398} INFO - Started process (PID=82279) to work on /Users/azad/airflow/dags/example.py
+[2019-05-26 18:45:29,175] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/example.py for tasks to queue
+[2019-05-26 18:45:29,177] {logging_mixin.py:95} INFO - [2019-05-26 18:45:29,176] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:45:29,190] {jobs.py:1723} INFO - DAG(s) ['FirstDag'] retrieved from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:45:29,221] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/example.py took 5.058 seconds
+[2019-05-26 18:47:33,772] {jobs.py:398} INFO - Started process (PID=82311) to work on /Users/azad/airflow/dags/example.py
+[2019-05-26 18:47:38,781] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/example.py for tasks to queue
+[2019-05-26 18:47:38,792] {logging_mixin.py:95} INFO - [2019-05-26 18:47:38,791] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:47:38,802] {jobs.py:1723} INFO - DAG(s) ['FirstDag'] retrieved from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:47:38,820] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/example.py took 5.048 seconds
+[2019-05-26 18:49:43,200] {jobs.py:398} INFO - Started process (PID=82338) to work on /Users/azad/airflow/dags/example.py
+[2019-05-26 18:49:48,207] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/example.py for tasks to queue
+[2019-05-26 18:49:48,208] {logging_mixin.py:95} INFO - [2019-05-26 18:49:48,207] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:49:48,223] {jobs.py:1723} INFO - DAG(s) ['FirstDag'] retrieved from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:49:48,249] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/example.py took 5.049 seconds
+[2019-05-26 18:51:52,521] {jobs.py:398} INFO - Started process (PID=82377) to work on /Users/azad/airflow/dags/example.py
+[2019-05-26 18:51:57,530] {jobs.py:1711} INFO - Processing file /Users/azad/airflow/dags/example.py for tasks to queue
+[2019-05-26 18:51:57,531] {logging_mixin.py:95} INFO - [2019-05-26 18:51:57,531] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:51:57,543] {jobs.py:1723} INFO - DAG(s) ['FirstDag'] retrieved from /Users/azad/airflow/dags/example.py
+[2019-05-26 18:51:57,568] {jobs.py:406} INFO - Processing /Users/azad/airflow/dags/example.py took 5.047 seconds

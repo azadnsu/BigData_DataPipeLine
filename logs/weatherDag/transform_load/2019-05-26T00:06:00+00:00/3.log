@@ -1,0 +1,86 @@
+[2019-05-27 12:45:44,657] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.transform_load 2019-05-26T00:06:00+00:00 [queued]>
+[2019-05-27 12:45:44,663] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.transform_load 2019-05-26T00:06:00+00:00 [queued]>
+[2019-05-27 12:45:44,664] {__init__.py:1353} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-27 12:45:44,664] {__init__.py:1354} INFO - Starting attempt 3 of 6
+[2019-05-27 12:45:44,664] {__init__.py:1355} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-27 12:45:44,670] {__init__.py:1374} INFO - Executing <Task(PythonOperator): transform_load> on 2019-05-26T00:06:00+00:00
+[2019-05-27 12:45:44,670] {base_task_runner.py:119} INFO - Running: [u'airflow', u'run', 'weatherDag', 'transform_load', '2019-05-26T00:06:00+00:00', u'--job_id', '61', u'--raw', u'-sd', u'DAGS_FOLDER/weatherDag.py', u'--cfg_path', '/var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T/tmpbNLyQj']
+[2019-05-27 12:45:45,426] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load [2019-05-27 12:45:45,425] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-05-27 12:45:45,596] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load [2019-05-27 12:45:45,595] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-27 12:45:45,599] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-27 12:45:45,599] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   DeprecationWarning)
+[2019-05-27 12:45:45,605] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-05-27 12:45:45,605] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   """)
+[2019-05-27 12:45:45,606] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-27 12:45:45,606] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   DeprecationWarning)
+[2019-05-27 12:45:45,618] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load [2019-05-27 12:45:45,617] {cli.py:517} INFO - Running <TaskInstance: weatherDag.transform_load 2019-05-26T00:06:00+00:00 [running]> on host Azads-MBP
+[2019-05-27 12:45:45,627] {python_operator.py:104} INFO - Exporting the following env vars:
+AIRFLOW_CTX_TASK_ID=transform_load
+AIRFLOW_CTX_DAG_ID=weatherDag
+AIRFLOW_CTX_EXECUTION_DATE=2019-05-26T00:06:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill_2019-05-26T00:06:00+00:00
+[2019-05-27 12:45:45,630] {logging_mixin.py:95} INFO - [2019-05-27 12:45:45,630] {base_hook.py:83} INFO - Using connection to: id: weather_id. Host: localhost, Port: None, Schema: WeatherDB, Login: Azad, Password: None, extra: {}
+[2019-05-27 12:45:45,632] {__init__.py:1580} ERROR - could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+Traceback (most recent call last):
+  File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/models/__init__.py", line 1441, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 112, in execute
+    return_value = self.execute_callable()
+  File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 117, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/azad/airflow/dags/weatherDag.py", line 57, in load_data
+    pg_hook.run(insert_cmd, parameters=row)
+  File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+    with closing(self.get_conn()) as conn:
+  File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/hooks/postgres_hook.py", line 60, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+[2019-05-27 12:45:45,633] {__init__.py:1603} INFO - Marking task as UP_FOR_RETRY
+[2019-05-27 12:45:45,643] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load Traceback (most recent call last):
+[2019-05-27 12:45:45,643] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/bin/airflow", line 32, in <module>
+[2019-05-27 12:45:45,643] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     args.func(args)
+[2019-05-27 12:45:45,643] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2019-05-27 12:45:45,644] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     return f(*args, **kwargs)
+[2019-05-27 12:45:45,644] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/bin/cli.py", line 523, in run
+[2019-05-27 12:45:45,644] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     _run(args, dag, ti)
+[2019-05-27 12:45:45,645] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/bin/cli.py", line 442, in _run
+[2019-05-27 12:45:45,645] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     pool=args.pool,
+[2019-05-27 12:45:45,645] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/db.py", line 73, in wrapper
+[2019-05-27 12:45:45,645] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     return func(*args, **kwargs)
+[2019-05-27 12:45:45,646] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/models/__init__.py", line 1441, in _run_raw_task
+[2019-05-27 12:45:45,646] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     result = task_copy.execute(context=context)
+[2019-05-27 12:45:45,646] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 112, in execute
+[2019-05-27 12:45:45,646] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     return_value = self.execute_callable()
+[2019-05-27 12:45:45,647] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/operators/python_operator.py", line 117, in execute_callable
+[2019-05-27 12:45:45,647] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     return self.python_callable(*self.op_args, **self.op_kwargs)
+[2019-05-27 12:45:45,647] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/airflow/dags/weatherDag.py", line 57, in load_data
+[2019-05-27 12:45:45,647] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     pg_hook.run(insert_cmd, parameters=row)
+[2019-05-27 12:45:45,647] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/hooks/dbapi_hook.py", line 159, in run
+[2019-05-27 12:45:45,647] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     with closing(self.get_conn()) as conn:
+[2019-05-27 12:45:45,648] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/hooks/postgres_hook.py", line 60, in get_conn
+[2019-05-27 12:45:45,648] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     self.conn = psycopg2.connect(**conn_args)
+[2019-05-27 12:45:45,648] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load   File "/Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py", line 130, in connect
+[2019-05-27 12:45:45,649] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2019-05-27 12:45:45,649] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load psycopg2.OperationalError: could not connect to server: Connection refused
+[2019-05-27 12:45:45,649] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load 	Is the server running on host "localhost" (127.0.0.1) and accepting
+[2019-05-27 12:45:45,649] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load 	TCP/IP connections on port 5432?
+[2019-05-27 12:45:45,649] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load could not connect to server: Connection refused
+[2019-05-27 12:45:45,650] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load 	Is the server running on host "localhost" (::1) and accepting
+[2019-05-27 12:45:45,650] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load 	TCP/IP connections on port 5432?
+[2019-05-27 12:45:45,650] {base_task_runner.py:101} INFO - Job 61: Subtask transform_load 
+[2019-05-27 12:45:49,661] {logging_mixin.py:95} INFO - [2019-05-27 12:45:49,660] {jobs.py:2562} INFO - Task exited with return code 1

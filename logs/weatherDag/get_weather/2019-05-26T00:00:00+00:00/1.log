@@ -1,0 +1,30 @@
+[2019-05-26 18:35:00,772] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.get_weather 2019-05-26T00:00:00+00:00 [queued]>
+[2019-05-26 18:35:00,777] {__init__.py:1139} INFO - Dependencies all met for <TaskInstance: weatherDag.get_weather 2019-05-26T00:00:00+00:00 [queued]>
+[2019-05-26 18:35:00,778] {__init__.py:1353} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-26 18:35:00,778] {__init__.py:1354} INFO - Starting attempt 1 of 6
+[2019-05-26 18:35:00,778] {__init__.py:1355} INFO - 
+--------------------------------------------------------------------------------
+[2019-05-26 18:35:00,791] {__init__.py:1374} INFO - Executing <Task(BashOperator): get_weather> on 2019-05-26T00:00:00+00:00
+[2019-05-26 18:35:00,791] {base_task_runner.py:119} INFO - Running: [u'airflow', u'run', 'weatherDag', 'get_weather', '2019-05-26T00:00:00+00:00', u'--job_id', '4', u'--raw', u'-sd', u'DAGS_FOLDER/weatherDag.py', u'--cfg_path', '/var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T/tmpxZocuv']
+[2019-05-26 18:35:01,505] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather [2019-05-26 18:35:01,504] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-05-26 18:35:01,676] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather [2019-05-26 18:35:01,676] {__init__.py:305} INFO - Filling up the DagBag from /Users/azad/airflow/dags/weatherDag.py
+[2019-05-26 18:35:01,680] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PythonOperator' directly from 'airflow.operators' has been deprecated. Please import from 'airflow.operators.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-26 18:35:01,680] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather   DeprecationWarning)
+[2019-05-26 18:35:01,686] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[2019-05-26 18:35:01,686] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather   """)
+[2019-05-26 18:35:01,687] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather /Users/azad/.virtualenvs/bigdata/lib/python2.7/site-packages/airflow/utils/helpers.py:387: DeprecationWarning: Importing 'PostgresHook' directly from 'airflow.hooks' has been deprecated. Please import from 'airflow.hooks.[operator_module]' instead. Support for direct imports will be dropped entirely in Airflow 2.0.
+[2019-05-26 18:35:01,687] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather   DeprecationWarning)
+[2019-05-26 18:35:06,701] {base_task_runner.py:101} INFO - Job 4: Subtask get_weather [2019-05-26 18:35:06,700] {cli.py:517} INFO - Running <TaskInstance: weatherDag.get_weather 2019-05-26T00:00:00+00:00 [running]> on host Azads-MacBook-Pro.local
+[2019-05-26 18:35:11,722] {bash_operator.py:81} INFO - Tmp dir root location: 
+ /var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T
+[2019-05-26 18:35:11,723] {bash_operator.py:90} INFO - Exporting the following env vars:
+AIRFLOW_CTX_TASK_ID=get_weather
+AIRFLOW_CTX_DAG_ID=weatherDag
+AIRFLOW_CTX_EXECUTION_DATE=2019-05-26T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill_2019-05-26T00:00:00+00:00
+[2019-05-26 18:35:11,725] {bash_operator.py:104} INFO - Temporary script location: /var/folders/vq/p6h8wgbx1kl6g19d3nf64l2r0000gn/T/airflowtmp1jDrK9/get_weatherni_HFX
+[2019-05-26 18:35:11,725] {bash_operator.py:114} INFO - Running command: /Users/azad/.virtualenvs/bigdata/bin/python /Users/azad/airflow/dags/src/getWeather.py
+[2019-05-26 18:35:11,731] {bash_operator.py:123} INFO - Output:
+[2019-05-26 18:35:11,970] {bash_operator.py:131} INFO - Command exited with return code 0
+[2019-05-26 18:35:15,873] {logging_mixin.py:95} INFO - [2019-05-26 18:35:15,872] {jobs.py:2562} INFO - Task exited with return code 0
